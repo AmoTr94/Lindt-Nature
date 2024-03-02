@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+  		<title>Lindt Nature</title>
+  		<meta charset="UTF-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  		<title>Tablette de Chocolat Lindt</title>
+  		<link rel="stylesheet" href="style2.css">
+	</head>
+
+<html>
+
+
+<body>
+
+	<header class="top-header">
+  <div class="logo">
+    <img src="images/Logo Lindt.png" alt="Lindt">
+  </div>
+  <div class="brand-info">
+    <h1>Lindt</h1>
+    <h2>- Lindt Nature</h2>
+  </div>
+</header>
+
+<div class="product-container">
+  <div class="product-image">
+    <img src="images/Lindt Nature OFFICIEL.jpg" alt="Tablette de Chocolat Lindt">
+  </div>
+
+
+
+
+  <div class="product-details">
+    <h2>Lindt Nature - Chocolat Noir Puissant 85% - Lait de Soja</h2>
+    <p>Ouvrez vos sens à une nouvelle expérience gourmande avec nos nouveaux 
+chocolats NATURE Bio Vegan au lait de Soja. Préparés avec passion par nos Maîtres Chocolatiers, chaque carré offre une fusion parfaite de saveurs délicates et intenses. 
+
+Découvrez l’harmonie entre gourmandise et respect de l’environnement dans chaque bouchée.</p>
+    <p>Poids : 100g</p>
+    <p>Prix : 4,99 €</p>
+    <a href="#" class="buy-button">Acheter</a>
+  </div>
+</div>
+
+<section class="product-photos">
+  <h2>Photos du Produit</h2>
+  
+  <div class="photo">
+    <img src="images/Lindt Nature OFFICIEL.jpg" alt="Photo du Produit 1">
+  </div>
+  
+  <div class="photo">
+    <img src="images/Lindt dos.jpg" alt="Photo du Produit 2">
+  </div>
+</section>
+
+<section class="ingredients-description">
+  <h2>Nutrition & Ingrédients</h2>
+   <p>Chocolat noir, extra-fin traditionnel.
+Cacao Nacional: 85% minimum.
+Ingrédients: pâte de cacao, cacao maigre, beurre de cacao, sucre de canne, vanille.
+Peut contenir des fruits à coque, du soja et des graines de sésame.</p>
+  <table>
+    <tr>
+      <th>Informations Nutritionnelles</th>
+      <th>Quantité pour 100g</th>
+    </tr>
+    <tr>
+      <td>Energie</td>
+      <td>2418kJ/584Kcal</td>
+    </tr>
+    <tr>
+      <td>Matières Grasses</td>
+      <td>46g</td>
+    </tr>
+    <tr>
+      <td>- dont saturées</td>
+      <td>27g</td>
+    </tr>
+    <tr>
+      <td>Glucides</td>
+      <td>22g</td>
+    </tr>
+    <tr>
+      <td>- dont sucres</td>
+      <td>15g</td>
+    </tr>
+    <tr>
+      <td>Protéines</td>
+      <td>12.5g</td>
+    </tr>
+    <tr>
+      <td>Sel</td>
+      <td>0.02g</td>
+    </tr>
+  </table>
+</section>
+
+<section class="delivery-methods">
+  <h2>Méthodes de Livraison</h2>
+  
+  <div class="delivery-method">
+    <h3>Livraison Colissimo</h3>
+    <p>Délai de livraison : 2-5 jours ouvrables (du lundi au vendredi)</p>
+    <p>Frais de livraison : 4.90 € - Offerte dès 50€ d'achat</p>
+  </div>
+  
+  <div class="delivery-method">
+    <h3>Livraison Chronopost</h3>
+    <p>Délai de livraison : 24h-72h jours ouvrables (du lundi au vendredi)</p>
+    <p>Frais de livraison : 16 €</p>
+  </div>
+  
+  <div class="delivery-method">
+    <h3>Livraison Chronofresh</h3>
+    <p>Délai de préparation : 24h-72h jours ouvrables (du lundi au vendredi)</p>
+    <p>Frais de service : 16 € - Offerte dès 40€ d'achat si Colissimo désactivé)</p>
+  </div>
+</section>
+
+
+<section class="order-section">
+  <h2>Passer Commande</h2>
+  
+  <div class="order-form">
+    <label for="quantity">Quantité :</label>
+    <input type="number" id="quantity" name="quantity" min="1" value="1">
+    
+    <p>Prix par unité : 4.99 €</p>
+    <p>Total : <span id="total-price">4.99</span> €</p>
+    
+    <hr>
+    
+    <h3>Informations de Livraison</h3>
+    
+    <div class="input-group">
+      <label for="first-name">Prénom :</label>
+      <input type="text" id="first-name" name="first-name">
+    </div>
+    
+    <div class="input-group">
+      <label for="last-name">Nom de Famille :</label>
+      <input type="text" id="last-name" name="last-name">
+    </div>
+    
+    <div class="input-group">
+      <label for="address">Adresse :</label>
+      <textarea id="address" name="address"></textarea>
+    </div>
+    
+    <input type="submit" value="Passer la Commande">
+  </div>
+</section>
+
+<script>
+  // Mettre à jour le prix total en fonction de la quantité choisie
+  document.getElementById('quantity').addEventListener('input', function() {
+    var quantity = parseInt(this.value);
+    var pricePerUnit = 4.99; // Prix par unité
+    var totalPrice = quantity * pricePerUnit;
+    document.getElementById('total-price').textContent = totalPrice;
+  });
+</script>
+
+
+
+<div class="customer-reviews">
+  <h3>Avis des clients:</h3>
+  <ul>
+    <li>
+      <strong>Cédric Grolet:</strong> "Cette tablette de chocolat est délicieuse! Je la recommande vivement." - 05/03/2024
+    </li>
+    <li>
+      <strong>Cyril Lignac:</strong> "Le meilleur chocolat que j'ai jamais goûté. Je vais certainement en acheter encore." - 01/03/2024
+    </li>
+    <li>
+      <strong>Pierre Hermé:</strong> "Une nouvelle recette délicieuse et respectueuse de l'environnement. Bravo!" - 22/03/2024
+    </li>
+  </ul>
+  <a href="#leave-review">Laisser un avis</a>
+</div>
+
+
+<section class="footer">
+  <div class="footer-content">
+    <div class="social-media">
+      <h3>Suivez-nous sur les réseaux sociaux</h3>
+      <ul>
+        <li><a href="https://www.facebook.com/LindtFrance"><img src="images/Logo FB.png" alt="Facebook"></a></li>
+        <li><a href="https://twitter.com/lindt_france?lang=fr"><img src="images/Logo X.png" alt="X"></a></li>
+        <li><a href="https://www.instagram.com/lindtfrance/"><img src="images/Logo Insta.png" alt="Instagram"></a></li>
+
+        <li><a href="https://www.pinterest.fr/lindtfrance/"><img src="images/Logo Pint.png" alt="Pinterest"></a></li>
+        <li><a href="https://www.linkedin.com/company/lindt-spr%C3%BCngli-france/?originalSubdomain=fr"><img src="images/Logo Link.png" alt="LinkedIn"></a></li>
+        <li><a href="https://www.youtube.com/user/LindtFrance"><img src="images/Logo YTB.png" alt="Youtube"></a></li>
+      </ul>
+    </div>
+    
+    <div class="contact-info">
+      <h3>Contacts</h3>
+      <p>Email: contact@lindt.com</p>
+      <p>Téléphone: +33 1 23 45 67 89</p>
+    </div>
+    
+    <div class="legal-info">
+      <h3>Informations Légales</h3>
+      <p>Lindt & Sprüngli France SAS</p>
+      <p>Adresse: 64402 Oloron-Sainte-Marie Cedex, France</p>
+      <p>SIRET: BP 49</p>
+    </div>
+  </div>
+</section>
+
+
+
+</body>
+</html>

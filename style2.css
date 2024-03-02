@@ -1,0 +1,310 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #f3f3f3;
+  padding: 20px;
+  text-align: center;
+}
+h1 {
+  color: #333;
+}
+.product-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.product-image {
+  text-align: center;
+}
+.product-image img {
+  max-width: 100%;
+  height: auto;
+}
+.product-details {
+  margin-top: 20px;
+}
+.product-details h2 {
+  color: #333;
+}
+.product-details p {
+  color: #666;
+}
+.buy-button {
+  display: inline-block;
+  background-color: #d6b25b;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.buy-button:hover {
+  background-color: #e65400;
+}
+
+
+
+
+
+.customer-reviews {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.customer-reviews h3 {
+  color: #666;
+}
+
+.customer-reviews ul {
+  list-style: none;
+  padding: 0;
+}
+
+.customer-reviews ul li {
+  margin-bottom: 10px;
+}
+
+.customer-reviews ul li strong {
+  color: #666;
+}
+
+.customer-reviews a {
+  color: #d6b25b;
+  text-decoration: none;
+}
+
+.customer-reviews a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+.order-section {
+  margin-top: 20px;
+}
+
+.order-section h2 {
+  color: #333;
+}
+
+.order-form {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.order-form label {
+  display: block;
+  margin-bottom: 10px;
+   color: #666;
+}
+
+.order-form input[type="number"],
+.order-form input[type="text"],
+.order-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.order-form input[type="submit"] {
+  background-color: #D6B25B;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-form input[type="submit"]:hover {
+  background-color: #e65400;
+}
+
+
+
+
+
+.ingredients-description {
+  margin-top: 20px;
+}
+
+.ingredients-description h2 {
+  color: #333;
+}
+
+.ingredients-description table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.ingredients-description th, .ingredients-description td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.ingredients-description th {
+  background-color: #f3f3f3;
+}
+
+.ingredients-description tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.ingredients-description tr:hover {
+  background-color: #f2f2f2;
+}
+
+
+
+.delivery-methods {
+  margin-top: 20px;
+}
+
+.delivery-methods h2 {
+  color: #333;
+}
+
+.delivery-method {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.delivery-method h3 {
+  color: #666;
+}
+
+.delivery-method p {
+  color: #888;
+  margin-bottom: 10px;
+}
+
+
+
+.product-photos {
+  margin-top: 20px;
+}
+
+.product-photos h2 {
+  color: #333;
+}
+
+.photo {
+  display: inline-block; 
+  margin-right: 10px; 
+}
+
+.photo:last-child {
+  margin-right: 0; 
+}
+
+.photo img {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+
+
+
+.footer {
+  background-color: #f3f3f3;
+  padding: 40px 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-media, .contact-info, .legal-info {
+  flex: 1;
+  text-align: center;
+  margin-right: 30px;
+}
+
+.social-media h3, .contact-info h3, .legal-info h3 {
+  color: #333;
+}
+
+.social-media ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-media ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-media ul li:last-child {
+  margin-right: 0;
+}
+
+.social-media ul li a img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  transition: transform 0.3s ease;
+}
+
+.social-media ul li a img:hover {
+  transform: scale(1.1);
+}
+
+.contact-info p, .legal-info p {
+  color: #666;
+}
+
+
+.top-header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 300px; /* Ajustez la taille du logo selon vos besoins */
+}
+
+.brand-info {
+  margin-left: 50px;
+}
+
+.brand-info h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.brand-info h2 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: normal;
+}
